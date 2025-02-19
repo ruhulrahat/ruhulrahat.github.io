@@ -3,134 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ruhul Rahat">
-    <meta name="description" content="Welcome to Ruhul Rahat's blog, where I share insights about technology and travel.">
-    <meta name="linkedin" content="https://www.linkedin.com/in/ruhulrahat/">
-
-    <title>Ruhul Rahat | Blog</title>
+    <title>Md Ruhul Amin Rahat - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+        .swiper-button-next, .swiper-button-prev {
+            width: 30px;
+            height: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            color: white;
+            font-size: 14px;
         }
-
-        header {
-            background-color: #0073e6;
-            color: #fff;
-            padding: 20px 10%;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-        }
-
-        nav {
-            margin-top: 20px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 20px 10%;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        ul li a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-
-        ul li a:hover {
-            text-decoration: underline;
+        .swiper-button-next::after, .swiper-button-prev::after {
+            font-size: 14px;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Ruhul Rahat's Blog</h1>
-        <p>Exploring the World of Technology and Travel</p>
-        <nav>
-            <a href="https://tech.ruhulrahat.me">Tech Blog</a>
-            <a href="https://travel.ruhulrahat.me">Travel Blog</a>
-        </nav>
-    </header>
+<body class="bg-gray-50 font-sans">
+    <div class="max-w-5xl mx-auto p-6 md:p-10 bg-white shadow-lg rounded-lg mt-0">
+        <header class="text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-800">Md Ruhul Amin Rahat</h1>
+            <p class="text-lg md:text-xl text-gray-600 mt-2">Mobile Full Stack Engineer</p>
+            <div class="mt-4 flex justify-center gap-4 text-sm md:text-base">
+                <a href="mailto:ruhulrahat02@gmail.com"  target="_blank" class="text-blue-500 hover:underline">Email</a>
+                <a href="https://www.linkedin.com/in/ruhulrahat"  target="_blank" class="text-blue-500 hover:underline">LinkedIn</a>
+                <a href="https://github.com/ruhulrahat"  target="_blank" class="text-blue-500 hover:underline">GitHub</a>
+                <a href="https://medium.com/@ruhulrahat" target="_blank" class="text-blue-500 hover:underline">Medium</a>
+            </div>
+        </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>I am a Software Engineer with a passion for travel and technology. With over 7 years of experience in Full Stack Mobile Development (Android and iOS), Backend (.NET, Java, and Node.js), and Cloud (AWS, Azure, GCP), I share my knowledge and experiences here.</p>
+        <section class="mt-8">
+            <p class="text-gray-600 mt-3 leading-relaxed">Software Engineer with 8+ years of expertise in mobile (Android, iOS, Flutter), frontend, backend, and cloud architectures. Passionate about building scalable, cloud-native solutions with modern technologies.</p>
         </section>
-
-        <section>
-            <h2>Explore My Blogs</h2>
-            <p>Visit <a href="https://tech.ruhulrahat.me">tech.ruhulrahat.me</a> for in-depth articles on technology, programming tips, and software development insights.</p>
-            <p>Discover travel stories, guides, and tips at <a href="https://travel.ruhulrahat.me">travel.ruhulrahat.me</a>.</p>
-        </section>
-
-        <section>
-            <h2>Connect with Me</h2>
-            <ul style="list-style: none; padding: 0;">
-                <li>
-                    <a href="https://www.linkedin.com/in/ruhulrahat/" target="_blank" style="text-decoration: none; color: #0073e6;">
-                        LinkedIn
-                    </a>
+        
+        <section class="mt-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700">Work Experience</h2>
+            <ul class="mt-4 space-y-4">
+                <!-- <li class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg">Senscom AS (Norway) - Full Stack Engineer (2024 - Present)</h3>
+                    <p class="text-gray-600">A Norway-based startup where I am working on re-architecting an IoT-based healthcare system from monolith to cloud-native microservices.</p>
+                </li> -->
+                <li class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg">Remote - Freelance Mobile Full Stack Engineer (2024 - Present)</h3>
+                    <p class="text-gray-600">I am working as consultant to startups as an Independent Contractor</p>
+                </li>
+                <li class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-lg">Brain Station 23 (Bangladesh) - Senior Software Engineer (2017 - 2024)</h3>
+                    <p class="text-gray-600">The largest software company in Bangladesh, where I specialized in building resource-efficient Android and iOS apps and full-stack solutions using .NET, Java, Angular, and cloud architectures.</p>
                 </li>
             </ul>
         </section>
         
-    </main>
+        <section class="mt-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700">Clients</h2>
+            <div class="swiper mySwiper mt-3">
+                <div class="swiper-wrapper">
+                    <a href="https://banglalink.net/en" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/banglalink.png" alt="Banglalink" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://unipet.co.tt/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/unipet.png" alt="Unipet" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="http://nop-station.com/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/nopstation.jpeg" alt="nopCommerce" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://www.norwayhealthtech.com/member/senscom-as-2/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/senscom.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://brainstation-23.com/portfolio-fight-athlete/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/flightAthlete.jpeg" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://fashionnection.com/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/fashionnection.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://www.instagram.com/gotraveldepot/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/traveldepot.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://ecstasybd.com/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/ecstasy.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://elmorclub.com.tr/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/elmor_club.jpg" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://priyoshopretail.com/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/priyoshop.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://www.othoba.com/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/othoba.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://aynalfahad.com/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/AynAlfahad.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://www.pickaboo.com/" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/Pickaboo.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <a href="https://www.qatarliving.com/online-store/qbuys-qatar" target="_blank" class="swiper-slide flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-sm">
+                        <img src="assets/clients/qbuys.png" alt="Senscom AS" class="h-16 md:h-20 object-contain">
+                    </a>
+                </div>
 
-    <footer>
-        <p>&copy; 2025 Ruhul Rahat. All Rights Reserved.</p>
-    </footer>
+                   <!-- Slider Controls -->
+                   <div class="swiper-pagination mt-4"></div>
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+   
+            </div>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700">Certifications</h2>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-center bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <img src="assets/certifications/aws.png"  alt="AWS Certified Solutions Architect" class="w-16 h-16 mr-4">
+                    <div>
+                        <p class="font-bold">AWS Certified Solutions Architect – Associate (SAA-C03)</p>
+                        <a href="https://www.credly.com/badges/f9023c1e-aca8-4377-a2c5-0cc71c665f60/public_url"  target="_blank" class="text-blue-500 hover:underline">View Credential</a>
+                    </div>
+                </div>
+                <div class="flex items-center bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <img src="assets/certifications/nopcommerce.png"  alt="nopCommerce Certified Developer" class="w-16 h-16 mr-4">
+                    <div>
+                        <p class="font-bold">nopCommerce Certified Developer</p>
+                        <a href="https://www.nopcommerce.com/en/md-ruhul-amin-rahat"  target="_blank" class="text-blue-500 hover:underline">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+        <section class="mt-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700">Education</h2>
+            <div class="flex items-center p-4">
+                <img src="assets/education/iit.svg" alt="nopCommerce Certified Developer" class="w-16 h-16 mr-4">
+                <p class="text-gray-600">BSc in Software Engineering, IIT, University of Dhaka</p>
+            </div>
+        </section>
+        
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "bullets",
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
 </body>
 </html>
